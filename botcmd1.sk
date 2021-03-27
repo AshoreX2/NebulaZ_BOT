@@ -1,0 +1,143 @@
+discord command !help:
+	trigger:
+		make embed:
+			add field named "!ip" with value "displays the server ip" to the embed
+			add field named "!hi" with value "displays a hello message" to the embed
+			add field named "!link <code>" with value "links your minecraft account to our discord server" to the embed
+			add field named "!vote" with value "displays links to support us" to the embed
+			add field named "!about" with value "displays an embed about NebulaZ BOT" to the embed
+			add field named "Music Help" with value "!musichelp" to the embed
+			set the thumbnail of embed to "https://cdn.discordapp.com/attachments/817760790744137728/818668794321961002/Horsehead-Nebula.jpg"
+			set the footer of embed to footer with text "NebulaZ Commands"
+			set color of the embed to red
+			set the description of {_embed} to "!help"
+			set title of embed to "Commands Help"
+		set {e} to a new message builder
+		set embed of {e} to last embed
+		send {e} to event-channel with event-bot
+
+discord command !5980327809:
+	trigger:
+		make embed:
+			add field named "Rule 1." with value "No pinging **staff**, unless it's an emergency." to the embed
+			add field named "Rule 2." with value "No **spamming**, as it may annoy others." to the embed
+			add field named "Rule 3." with value "No **racism** or **sexism**, as it may offend others." to the embed
+			add field named "Rule 4." with value "No **swearing** or **cussing**, as this is a PG server." to the embed
+			add field named "Rule 5." with value "No **NSFW**, as it can sometimes be offensive." to the embed
+			add field named "Rule 6." with value "No **arguing**, as it may create more hatred." to the embed
+			add field named "Rule 7." with value "No **memes** in general chat please, as we already have a memes channel." to the embed
+			add field named "Rule 8." with value "Please use **english** only, as this server is based on that language." to the embed
+			add field named "Rule 9." with value "Please do not **advertise**, unless it's in the media channel." to the embed
+			add field named "Rule 10." with value "Please do not **disrespect staff**, as worse consequences will happen if broken." to the embed
+			add field named "Note:" with value "If any of these rules are broken, consequences will happen. (Applies to staff)" to the embed
+			set the thumbnail of embed to "https://cdn.discordapp.com/attachments/817760790744137728/818668794321961002/Horsehead-Nebula.jpg"
+			set the footer of embed to footer with text "NebulaZ"
+			set color of the embed to red
+			set the description of {_embed} to "r u l e s"
+			set title of embed to "Rules"
+		set {e} to a new message builder
+		set embed of {e} to last embed
+		send {e} to event-channel with event-bot
+
+
+discord command !4250987:
+	trigger:
+		make embed:
+			add field with value "Q: How do I become staff?" to the embed
+			add field with value "A: **The link in the staff-applications channel.**" to the embed
+			add field with value "Q: What games are on NebulaZ?" to the embed
+			add field with value "A: **Skyblock, Bedwars, and an SMP currently.**" to the embed
+			add field with value "Q: What is the server ip?" to the embed
+			add field with value "A: **nebulaz.ddns.net**" to the embed
+			add field with value "Q: How do I link my minecraft account to the discord?" to the embed
+			add field with value "A: **In the minecraft server, do 'link' and type in '!link <code>' in the commands channel.**" to the embed
+			add field with value "Q: How do I mute pings in this server?" to the embed
+			add field with value "A: **Go to the *Notification Settings* and click 'supress @ everyone and @ here'.**" to the embed
+			set color of the embed to red
+			set the description of {_embed} to "FAQ"
+			set title of embed to "Freqently Asked Questions"
+		set {e} to a new message builder
+		set embed of {e} to last embed
+		send {e} to event-channel with event-bot
+
+discord command !807265078:
+	trigger:
+		make embed:
+			add field with value "**ip: nebulaz.ddns.net**" to the embed
+			add field with value "Hi, Welcome to the **Official NebulaZ Discord Server**!" to the embed
+			add field named "About NebulaZ Network" with value "**NebulaZ Network** is a minecraft server with minigames like bedwars, skyblock, parkour, and more coming soon! We try our hardest to make our guests' days better in our server. I hope you enjoy!" to the embed
+			add field with value "Please ensure you read our rules and FAQ." to the embed
+			add field with value "If you want to support us, vote for us here: https://minecraftservers.org/server/608822 https://minecraftlist.org/server/21911" to the embed
+			add field with value "Want to invite your friends? Use this link: https://discord.gg/rV9h3n7973" to the embed
+			set color of the embed to red
+			set the description of {_embed} to "About"
+			set title of embed to "About NebulaZ"
+		set {e} to a new message builder
+		set embed of {e} to last embed
+		send {e} to event-channel with event-bot
+
+discord command n!help:
+	trigger:
+		make embed:
+			add field with value "n!play <text> - to set the bot's status as Playing <text>" to the embed
+			add field with value "n!watch <text> - to set the bot's status as Watching <text>" to the embed
+			add field with value "n!stream <text> twitch.tv/flamestorm23 - to set the bot's status as Streaming <text> (please note the twitch link is just for the code dont bother thats just my twitch acc)" to the embed
+			add field with value "dont make any crappy status's please" to the embed
+			set color of the embed to red
+			set the description of {_embed} to "Admin Help for Bot"
+			set title of embed to "Admin Help for Bot"
+		set {e} to a new message builder
+		set embed of {e} to last embed
+		send {e} to event-channel with event-bot
+
+discord command !musichelp:
+	trigger:
+		make embed:
+			add field named "!play youtube <song>" with value "Plays the specified song on youtube" to the embed
+			add field named "!pause" with value "Pauses the track" to the embed
+			add field named "!resume" with value "Resumes the track" to the embed
+			add field named "!stop" with value "Stops the track" to the embed
+			add field named "!skip" with value "Skips the current track" to the embed
+			set the thumbnail of embed to "https://cdn.discordapp.com/attachments/817760790744137728/818668794321961002/Horsehead-Nebula.jpg"
+			set the footer of embed to footer with text "NebulaZ Music Commands"
+			set color of the embed to red
+			set the description of {_embed} to "!help"
+			set title of embed to "Music Help"
+		set {e} to a new message builder
+		set embed of {e} to last embed
+		send {e} to event-channel with event-bot
+
+discord command clear <number>:
+    description: <STAFF>Remove a load of messages
+    usage: purge <number>
+    prefixes: !
+    executable in: guild
+    trigger: 
+        grab the last arg-1 messages in event-channel
+        purge the grabbed messages with event-bot
+        set {_error} to last vixio error 
+        if {_error} is set:
+            reply with "I ran into an error! `%{_error}%`"
+            stop
+            reply with "I have successfully cleared %arg-1% messages" 
+
+discord command !ban <text>:
+	trigger:
+		ban arg-1 from guild with id "786781130308976682" due to "Not following discord rules." as "NebulaZ BOT"
+
+discord command !kick <text>:
+	trigger:
+		kick arg-1 from guild with id "786781130308976682" due to "Not following discord rules." as "NebulaZ BOT"
+
+discord command !warn <text> <text>:
+		trigger:
+				delete event-message
+				reply with arg-1 and arg-2
+				
+on member join guild:
+    send "Hey %event-user% , welcome to NebulaZ! Please read our rules and about before anything else." to channel with id "787006203154530304" with event-bot
+
+every 1 hour in "nebulazhub":
+    broadcast "potatoes from the sky"
+
+

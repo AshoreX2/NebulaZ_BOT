@@ -1,0 +1,47 @@
+command link:
+    trigger:
+        set {_code} to a random integer between 11111 and 99999
+        set {code::%{_code}%} to player
+        send "&0[&5NebulaZ&0] &7Your code is &f%{_code}%. Run the command &f!link %{_code}%&7 on our discord to link your account. This code will be deleted in 1 minute."
+        wait 1 minute
+        delete {code::%{_code}%}
+
+discord command link [<text>]:
+    prefixes: !
+    trigger:
+        if arg-1 is not set:
+            reply with " Syntax: !link (code)"
+            stop
+        if {code::%arg-1%} is not set:
+            reply with "Invalid code! Please try again."
+            stop
+        set {discord::%discord id of event-member%::username} to {code::%arg-1%}
+        reply with "You have linked with the Minecraft account %{code::%arg-1%}%!"
+        add event-user role with id "821188012943212586"
+        delete {code::%arg-1%}
+        set 
+
+discord command ello:
+	prefixes: h
+	trigger:
+		reply with "Hey %event-member%!"
+
+discord command !clear [<number>]:
+	executable in: guild
+	trigger:
+		set {_num} to arg-1 
+		grab the last {_num} messages in event-channel
+		purge the grabbed messages with event-bot
+		set {_error} to last vixio error 
+		if {_error} is set:
+			reply with "I ran into an error! `%{_error}%`"
+			stop
+		reply with "I have successfully deleted %arg-1% messages"
+
+discord command ello:
+	prefixes: h
+	trigger:
+		reply with "Hey %event-member%!"
+
+
+      

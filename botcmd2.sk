@@ -1,0 +1,41 @@
+discord command hi:
+   prefixes: !
+   trigger:
+      reply with "Hello. Hope you have a nice day/night!"
+
+
+discord command ip:
+   prefixes: !
+   trigger:
+      reply with "nebulaz.ddns.net"
+
+
+
+discord command vote:
+   prefixes: !
+   trigger:
+      reply with "Support us and vote here:https://minecraftservers.org/server/608822"
+
+discord command !about:
+	trigger:
+		make embed:
+			add field with value "NebulaZ BOT is the official bot of NebulaZ, a minecraft minigames server." to the embed
+			add field with value "NebulaZ BOT is a cool bot that's linked to our minecraft server!" to the embed
+			add field with value "If you have any problems, or want a copy of it, please dm lethality about it." to the embed
+			set color of the embed to red
+			set the description of {_embed} to "!help"
+			set title of embed to "About NebulaZ BOT"
+		set {e} to a new message builder
+		set embed of {e} to last embed
+		send {e} to event-channel with event-bot
+
+discord command !clear <integer>:
+    trigger:
+        set {_num} to arg-1 
+        grab the last {_num} messages in event-channel
+        delete the grabbed messages with event-bot
+        set {_error} to last vixio error 
+        if {_error} is set:
+            reply with "I ran into an error! %{_error}%"
+            stop
+        reply with "I have successfully deleted %arg-1% messages"	
